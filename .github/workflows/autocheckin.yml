@@ -25,7 +25,8 @@ jobs:
           pip install -r requirements.txt
       - name: 复制cookie信息
         run: |
-          cp music163.pkl /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages/DecryptLogin/modules/clients/music163.pkl
+          pwd
+          # cp music163.pkl /opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages/DecryptLogin/modules/clients/music163.pkl
       - name: 开始尝试签到
         run: |
           python3 main.py
